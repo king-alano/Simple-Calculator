@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="Media/favicon.png">
+</head>
+
+<body>
+  <div id="calculator">
+    <div id="display">
+      <div id="history"></div>
+      <div id="result">0</div>
+
+    </div>
+    <div id="buttons">
+      <div class="buttonContainer">
+        <button onclick = "c();" class="button command">C</button>
+        <button onclick = "ce();" class="button command">CE</button>
+        <button onclick = "neg();" class="button command">⁽⁻⁾</button>
+        <button onclick = "operator('÷')" class="button operator">&divide;</button>
+      </div>
+      <div class="buttonContainer">
+        <button onclick = "append('7');" class="button">7</button>
+        <button onclick = "append('8');" class="button">8</button>
+        <button onclick = "append('9');" class="button">9</button>
+        <button onclick = "operator('×');" class="button operator">&times;</button>
+      </div>
+      <div class="buttonContainer">
+        <button onclick = "append('4');" class="button">4</button>
+        <button onclick = "append('5');" class="button">5</button>
+        <button onclick = "append('6');" class="button">6</button>
+        <button onclick = "operator('–');" class="button operator">-</button>
+      </div>
+      <div class="buttonContainer">
+        <button onclick = "append('1');" class="button">1</button>
+        <button onclick = "append('2');" class="button">2</button>
+        <button onclick = "append('3');" class="button">3</button>
+        <button onclick = "operator('+');" class="button operator">+</button>
+      </div>
+      <div class="buttonContainer">
+        <button class="button empty"></button>
+        <button onclick = "append('0');" class="button">0</button>
+        <button onclick = "mf();" class="button">.</button>
+        <button onclick = "eval();" class="button operator">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
